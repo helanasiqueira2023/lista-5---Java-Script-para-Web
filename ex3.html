@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Informe um valor</h2>
+    <input type="number" id="valor1">
+    <button onclick="silver()">Silver </button>
+    <button onclick="gold()">Gold</button>
+    <button onclick="platinum()">Platinum</button>
+    <h2 id="resultado"></h2>
+    <script>
+function silver(){
+var opcao1 = document.getElementById('valor1').value;
+var conversao = parseFloat(opcao1)
+var calculo = conversao*0.95
+if(calculo > 300) {
+    alert("Total com desconto: R$"+ calculo + ". Você ganhou um brinde especial!");
+} else{
+    alert("Total com desconto: R$"+ calculo);
+}
+var atualizarResultado = document.getElementById('resultado')
+atualizarResultado.textContent = "Total com desconto:"+ calculo
+alert("O valor passou de R$300,00, você acaba de ganhar um brinde especial!!")
+
+
+
+
+}
+
+function gold(){
+var opcao2 = document.getElementById('valor1').value;
+var conversao2 = parseFloat(opcao2)
+var calc = conversao2*0.90
+if(calculo > 300) {
+    alert("Total com desconto: R$"+ calc + ". Você ganhou um brinde especial!");
+} else{
+    alert("Total com desconto: R$"+ calc);
+}
+var atualizarResultado = document.getElementById('resultado')
+atualizarResultado.textContent = "Total com desconto:"+ calc
+alert("O valor passou de R$300,00, você acaba de ganhar um brinde especial!!")
+}
+
+function platinum(){
+var opcao3 = document.getElementById('valor1').value;
+var conversao3 = parseFloat(opcao3)
+var calculo = conversao3*0.85
+if(calculo > 300) {
+    alert("Total com desconto: R$"+ calculo + ". Você ganhou um brinde especial!");
+} else{
+    alert("Total com desconto: R$"+ calculo);
+}
+var atualizarResultado = document.getElementById('valor4').value;
+atualizarResultado.textContent = "Total com desconto:"+ calculo
+alert("O valor passou de R$300,00, você acaba de ganhar um brinde especial!!")
+}
+
+    </script>
+</body>
+</html>

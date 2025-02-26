@@ -1,0 +1,87 @@
+<body>
+    <h1>Calcule os Dois Números Abaixo:</h1>
+    <p>Primeiro Número</p>
+    <input type="number" id="num1">
+    <p>Segundo Número</p>
+    <input type="number" id="num2">
+
+<button onclick="somar()">+</button>
+<button onclick="sub()">-</button>
+<button onclick="div()">/</button>
+<button onclick="x()">x</button>
+<button onclick="resto()">%</button>
+
+<h2 id="resultado"></h2>
+</body>
+
+
+<script>
+function somar() {
+var valor1 = document.getElementById('num1').value;
+var valor2 = document.getElementById('num2').value;
+
+var numero1 = parseFloat(valor1)
+var numero2 = parseFloat(valor2)
+
+var calc = (numero1 + numero2)
+
+var elementoResultado = document.getElementById('resultado')
+    elementoResultado.textContent="Total: " + calc
+
+}
+
+function sub() {
+    var valor1 = document.getElementById('num1').value;
+    var valor2 = document.getElementById('num2').value;
+    
+    var numero1 = parseFloat(valor1)
+    var numero2 = parseFloat(valor2)
+    
+    var calc = (numero1 - numero2)
+    
+    var elementoResultado = document.getElementById('resultado')
+        elementoResultado.textContent="Total: " + calc
+    
+}
+
+function div() {
+    var valor1 = document.getElementById('num1').value;
+    var valor2 = document.getElementById('num2').value;
+    
+    var numero1 = parseFloat(valor1)
+    var numero2 = parseFloat(valor2)
+    
+    var calc = (numero1 / numero2)
+    
+    var elementoResultado = document.getElementById('resultado')
+        elementoResultado.textContent="Total: " + calc
+}
+
+function x() {
+    var valor1 = document.getElementById('num1').value;
+    var valor2 = document.getElementById('num2').value;
+    
+    var numero1 = parseFloat(valor1)
+    var numero2 = parseFloat(valor2)
+    
+    var calc = (numero1 * numero2)
+    
+    var elementoResultado = document.getElementById('resultado')
+        elementoResultado.textContent="Total: " + calc
+}
+
+function resto() {
+    var valor1 = document.getElementById('num1').value;
+    var valor2 = document.getElementById('num2').value;
+    
+    var numero1 = parseFloat(valor1)
+    var numero2 = parseFloat(valor2)
+    
+    var calc = (numero1 % numero2)
+    
+    var elementoResultado = document.getElementById('resultado')
+        elementoResultado.textContent="Total: " + calc
+}
+
+
+</script>

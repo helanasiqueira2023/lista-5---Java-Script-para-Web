@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Primeira Nota</h2>
+    <input type="number" id="media1">
+    <h2>Segunda Nota</h2>
+    <input type="number" id="media2">
+    <h2>Terceira Nota</h2>
+    <input type="number" id="media3">
+    <button onclick="calculo()">calcular</button>
+    <h2 id="resultado"></h2>
+    <script>
+function calculo (){
+    var valor1 = document.getElementById('media1').value;
+    var valor2 = document.getElementById('media2').value;
+    var valor3 = document.getElementById('media3').value;
+
+    var conversao = parseFloat(valor1)
+    var conversao2 = parseFloat(valor2)
+    var conversao3 = parseFloat(valor3)
+
+    var mediaFinal = (conversao + conversao2 + conversao3) / 3
+
+    var atualizarResultado = document.getElementById('resultado')
+    atualizarResultado.textContent = "total "+ mediaFinal
+}
+
+
+    </script>
+</body>
+</html>
